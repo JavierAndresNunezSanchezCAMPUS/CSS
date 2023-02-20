@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("img/milky-way-2695569_1280.jpg");
+    background-size: cover;
+
+}
+
+header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(to right, blue, purple);
+    opacity: 0.8;
+}
+
+img {
+
+
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+li {
+
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+
+}
+
+li:hover {
+
+    color: white;
+    background: rgb(0, 0, 0);
+    transform: scale(1.2);
+}
+
+.first-section {
+
+    position: relative;
+    height: 100%;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.section {
+    
+    position: absolute;
+    top: 18rem;
+}
+
+.lorem {
+
+    margin: 10px;
+    padding: 10px;
+    padding-bottom: 30px;
+
+}
+
+.btn {
+
+    color: black;
+    display: inline;
+    background: rgb(239, 179, 179);
+    padding: 10px;
+    transition: all 100ms ease-in;
+}
+
+.btn:hover {
+
+    background: rgb(255, 255, 255);
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 790px) {
+
+    header {
+
+        display: grid;
+        justify-content: center;
+
+    }
+
+    li {
+        text-align: center;
+        display: block;
+
+    }
+     
+    .section {
+        top: 1rem;
+        padding: 2rem;
+    }
+}
